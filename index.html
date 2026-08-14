@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Probabilistic Machine Learning</title>
+    <title>Into Probabilistic Machine Learning</title>
 
     <style>
 
@@ -25,7 +25,7 @@
         header {
             background: #17324d;
             color: white;
-            padding: 70px 20px;
+            padding: 75px 20px;
         }
 
         .header-content {
@@ -34,15 +34,21 @@
         }
 
         header h1 {
-            font-size: 42px;
-            margin: 0 0 10px 0;
+            font-size: 46px;
+            line-height: 1.15;
+            margin: 0 0 15px 0;
             font-weight: 600;
         }
 
         header p {
             font-size: 19px;
-            margin: 0;
-            opacity: 0.85;
+            margin: 6px 0;
+            opacity: 0.9;
+        }
+
+        .institution {
+            font-size: 16px;
+            opacity: 0.75;
         }
 
         main {
@@ -56,16 +62,20 @@
         }
 
         h2 {
-            font-size: 26px;
-            margin-bottom: 15px;
+            font-size: 27px;
+            margin-bottom: 18px;
             color: #17324d;
         }
 
         .intro {
             background: white;
-            padding: 30px;
+            padding: 32px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .intro p {
+            margin-top: 8px;
         }
 
         .lesson {
@@ -77,7 +87,7 @@
         }
 
         .lesson-number {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
             color: #587a96;
             text-transform: uppercase;
@@ -85,13 +95,19 @@
         }
 
         .lesson h3 {
-            margin: 5px 0 15px 0;
-            font-size: 22px;
+            margin: 5px 0 8px 0;
+            font-size: 21px;
             color: #17324d;
+            font-weight: 600;
+        }
+
+        .lesson p {
+            margin: 5px 0;
+            color: #52616f;
         }
 
         .buttons {
-            margin-top: 15px;
+            margin-top: 18px;
         }
 
         .button {
@@ -99,6 +115,7 @@
             text-decoration: none;
             padding: 9px 16px;
             margin-right: 8px;
+            margin-bottom: 5px;
             border-radius: 6px;
             font-size: 14px;
             font-weight: 500;
@@ -120,24 +137,46 @@
 
         footer {
             text-align: center;
-            padding: 30px;
+            padding: 35px 20px;
             color: #718096;
             font-size: 14px;
         }
 
+        @media (max-width: 600px) {
+
+            header {
+                padding: 50px 20px;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            .lesson {
+                padding: 22px;
+            }
+
+        }
+
     </style>
+
 </head>
 
 
 <body>
 
+
 <header>
 
     <div class="header-content">
 
-        <h1>Probabilistic Machine Learning</h1>
+        <h1>Into Probabilistic Machine Learning</h1>
 
-        <p>Course materials · 2026</p>
+        <p>Course materials</p>
+
+        <p class="institution">
+            University of Pretoria · David Rios Insua
+        </p>
 
     </div>
 
@@ -151,17 +190,19 @@
 
         <div class="intro">
 
-            <h2>Welcome</h2>
+            <h2>About the course</h2>
 
             <p>
-                Welcome to the Probabilistic Machine Learning course.
-                This website contains the slides and practical materials
-                for the six lessons.
+                Welcome to <strong>Into Probabilistic Machine Learning</strong>.
+                This course provides an introduction to probabilistic approaches
+                to machine learning, connecting Bayesian modelling, computation,
+                regression, neural networks and probabilistic graphical models.
             </p>
 
             <p>
-                Each lesson includes a PDF deck and a ZIP archive
-                containing the R Markdown files, documents, and datasets.
+                The course consists of six lessons. Each lesson includes a
+                slide deck and a ZIP archive containing the R Markdown files,
+                documents and datasets used in the practical work.
             </p>
 
         </div>
@@ -174,17 +215,17 @@
         <h2>Course materials</h2>
 
 
+        <!-- LESSON 1 -->
+
         <div class="lesson">
 
             <div class="lesson-number">
                 Lesson 01
             </div>
 
-            <h3>Probabilistic Machine Learning</h3>
-
-            <p>
-                Course introduction and first concepts.
-            </p>
+            <h3>
+                Introduction and overview
+            </h3>
 
             <div class="buttons">
 
@@ -203,20 +244,36 @@
         </div>
 
 
+        <!-- LESSON 2 -->
+
         <div class="lesson">
 
             <div class="lesson-number">
                 Lesson 02
             </div>
 
-            <h3>Coming soon</h3>
+            <h3>
+                From beta-binomial and normal-normal to generative models
+            </h3>
 
             <p>
-                Materials will be added here.
+                Bayesian conjugate models and the transition towards
+                generative probabilistic modelling.
             </p>
+
+            <div class="buttons">
+
+                <a class="button materials"
+                   href="#">
+                    Materials coming soon
+                </a>
+
+            </div>
 
         </div>
 
+
+        <!-- LESSON 3 -->
 
         <div class="lesson">
 
@@ -224,14 +281,28 @@
                 Lesson 03
             </div>
 
-            <h3>Coming soon</h3>
+            <h3>
+                Regression and dynamic linear models
+            </h3>
 
             <p>
-                Materials will be added here.
+                Probabilistic regression and dynamic approaches to modelling
+                evolving systems.
             </p>
+
+            <div class="buttons">
+
+                <a class="button materials"
+                   href="#">
+                    Materials coming soon
+                </a>
+
+            </div>
 
         </div>
 
+
+        <!-- LESSON 4 -->
 
         <div class="lesson">
 
@@ -239,14 +310,28 @@
                 Lesson 04
             </div>
 
-            <h3>Coming soon</h3>
+            <h3>
+                Computational Bayesian methods
+            </h3>
 
             <p>
-                Materials will be added here.
+                Computational techniques for Bayesian inference and
+                probabilistic modelling.
             </p>
+
+            <div class="buttons">
+
+                <a class="button materials"
+                   href="#">
+                    Materials coming soon
+                </a>
+
+            </div>
 
         </div>
 
+
+        <!-- LESSON 5 -->
 
         <div class="lesson">
 
@@ -254,14 +339,28 @@
                 Lesson 05
             </div>
 
-            <h3>Coming soon</h3>
+            <h3>
+                Bayesian neural networks
+            </h3>
 
             <p>
-                Materials will be added here.
+                Neural networks from a Bayesian and probabilistic
+                perspective.
             </p>
+
+            <div class="buttons">
+
+                <a class="button materials"
+                   href="#">
+                    Materials coming soon
+                </a>
+
+            </div>
 
         </div>
 
+
+        <!-- LESSON 6 -->
 
         <div class="lesson">
 
@@ -269,11 +368,24 @@
                 Lesson 06
             </div>
 
-            <h3>Coming soon</h3>
+            <h3>
+                Case study: CRC screening and introduction to PGMs
+            </h3>
 
             <p>
-                Materials will be added here.
+                A practical case study on colorectal cancer screening,
+                together with an introduction to probabilistic graphical
+                models.
             </p>
+
+            <div class="buttons">
+
+                <a class="button materials"
+                   href="#">
+                    Materials coming soon
+                </a>
+
+            </div>
 
         </div>
 
@@ -286,7 +398,8 @@
 
 <footer>
 
-    Probabilistic Machine Learning · Course materials
+    Into Probabilistic Machine Learning<br>
+    University of Pretoria · David Rios Insua
 
 </footer>
 
