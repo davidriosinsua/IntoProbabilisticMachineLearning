@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -25,7 +26,7 @@
         header {
             background: #17324d;
             color: white;
-            padding: 75px 20px;
+            padding: 70px 20px;
         }
 
         .header-content {
@@ -53,12 +54,12 @@
 
         main {
             max-width: 1000px;
-            margin: 50px auto;
+            margin: 45px auto;
             padding: 0 20px;
         }
 
         section {
-            margin-bottom: 50px;
+            margin-bottom: 45px;
         }
 
         h2 {
@@ -74,14 +75,10 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
-        .intro p {
-            margin-top: 8px;
-        }
-
         .lesson {
             background: white;
             padding: 25px 30px;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
@@ -106,33 +103,24 @@
             color: #52616f;
         }
 
-        .buttons {
-            margin-top: 18px;
-        }
-
         .button {
             display: inline-block;
             text-decoration: none;
             padding: 9px 16px;
-            margin-right: 8px;
-            margin-bottom: 5px;
+            margin-top: 12px;
             border-radius: 6px;
             font-size: 14px;
             font-weight: 500;
-        }
-
-        .slides {
             background: #17324d;
             color: white;
         }
 
-        .materials {
-            background: #e8eef3;
-            color: #17324d;
-        }
-
         .button:hover {
             opacity: 0.8;
+        }
+
+        .seminar {
+            border-left: 5px solid #587a96;
         }
 
         footer {
@@ -170,9 +158,13 @@
 
     <div class="header-content">
 
-        <h1>Into Probabilistic Machine Learning</h1>
+        <h1>
+            Into Probabilistic Machine Learning
+        </h1>
 
-        <p>Course materials</p>
+        <p>
+            Course materials
+        </p>
 
         <p class="institution">
             University of Pretoria · David Rios Insua
@@ -193,16 +185,17 @@
             <h2>About the course</h2>
 
             <p>
-                Welcome to <strong>Into Probabilistic Machine Learning</strong>.
-                This course provides an introduction to probabilistic approaches
-                to machine learning, connecting Bayesian modelling, computation,
-                regression, neural networks and probabilistic graphical models.
+                <strong>Into Probabilistic Machine Learning</strong>
+                provides an introduction to probabilistic approaches
+                to machine learning, connecting Bayesian modelling,
+                computation, regression, neural networks and
+                probabilistic graphical models.
             </p>
 
             <p>
-                The course consists of six lessons. Each lesson includes a
-                slide deck and a ZIP archive containing the R Markdown files,
-                documents and datasets used in the practical work.
+                The course consists of six lessons followed by a
+                research seminar. Each lesson provides slides and,
+                where applicable, practical materials and datasets.
             </p>
 
         </div>
@@ -212,10 +205,8 @@
 
     <section>
 
-        <h2>Course materials</h2>
+        <h2>Course lessons</h2>
 
-
-        <!-- LESSON 1 -->
 
         <div class="lesson">
 
@@ -227,188 +218,150 @@
                 Introduction and overview
             </h3>
 
-            <div class="buttons">
+            <p>
+                Introduction to probabilistic machine learning
+                and an overview of the course.
+            </p>
 
-    <a class="button slides"
-       href="lesson-01/">
-        View lesson
-    </a>
-
-</div>
-
-        </div>
-
-
-        <!-- LESSON 2 -->
-
-        <div class="lesson">
-
-    <div class="lesson-number">
-        Lesson 02
-    </div>
-
-    <h3>
-        From beta-binomial and normal-normal to generative models
-    </h3>
-
-    <p>
-        Bayesian conjugate models and the transition towards
-        generative probabilistic modelling.
-    </p>
-
-    <div class="buttons">
-
-        <a class="button slides"
-           href="lesson-02/">
-            View lesson
-        </a>
-
-       </div>         
+            <a class="button" href="lesson-01/">
+                View lesson
+            </a>
 
         </div>
 
 
-        <!-- LESSON 3 -->
+        <div class="lesson">
 
-<div class="lesson">
+            <div class="lesson-number">
+                Lesson 02
+            </div>
 
-    <div class="lesson-number">
-        Lesson 03
-    </div>
+            <h3>
+                From beta-binomial and normal-normal to generative models
+            </h3>
 
-    <h3>
-        Regression and dynamic linear models
-    </h3>
+            <p>
+                Bayesian conjugate models and the transition towards
+                generative probabilistic modelling.
+            </p>
 
-    <p>
-        Probabilistic regression and dynamic approaches to
-        modelling evolving systems.
-    </p>
+            <a class="button" href="lesson-02/">
+                View lesson
+            </a>
 
-    <div class="buttons">
+        </div>
 
-        <a class="button slides"
-           href="lesson-03/">
-            View lesson
-        </a>
-
-    </div>
-
-</div>
-
-       
-
-        <!-- LESSON 4 -->
-
-      <div class="lesson">
-
-    <div class="lesson-number">
-        Lesson 04
-    </div>
-
-    <h3>
-        Computational Bayesian methods
-    </h3>
-
-    <p>
-        Computational techniques for Bayesian inference,
-        including MCMC methods and Stan.
-    </p>
-
-    <div class="buttons">
-
-        <a class="button slides"
-           href="lesson-04/">
-            View lesson
-        </a>
-
-    </div>
-
-</div>  
-
-        
-        <!-- LESSON 5 -->
 
         <div class="lesson">
 
-    <div class="lesson-number">
-        Lesson 05
-    </div>
+            <div class="lesson-number">
+                Lesson 03
+            </div>
 
-    <h3>
-        Bayesian neural nets
-    </h3>
+            <h3>
+                Regression and dynamic linear models
+            </h3>
 
-    <p>
-        Neural networks from a Bayesian and probabilistic
-        perspective.
-    </p>
+            <p>
+                Probabilistic regression and dynamic approaches to
+                modelling evolving systems.
+            </p>
 
-    <div class="buttons">
+            <a class="button" href="lesson-03/">
+                View lesson
+            </a>
 
-        <a class="button slides"
-           href="lesson-05/">
-            View lesson
-        </a>
+        </div>
 
-    </div>
-
-</div>
-
-
-        <!-- LESSON 6 -->
 
         <div class="lesson">
 
-    <div class="lesson-number">
-        Lesson 06
-    </div>
+            <div class="lesson-number">
+                Lesson 04
+            </div>
 
-    <h3>
-        Case study: CRC screening (and introduction to PGMs)
-    </h3>
+            <h3>
+                Computational Bayesian methods
+            </h3>
 
-    <p>
-        A case study on colorectal cancer screening,
-        together with an introduction to probabilistic
-        graphical models.
-    </p>
+            <p>
+                Computational techniques for Bayesian inference,
+                including MCMC methods and Stan.
+            </p>
 
-    <div class="buttons">
+            <a class="button" href="lesson-04/">
+                View lesson
+            </a>
 
-        <a class="button slides"
-           href="lesson-06/">
-            View lesson
-        </a>
+        </div>
 
-    </div>
 
-</div>
+        <div class="lesson">
 
- <div class="lesson">
+            <div class="lesson-number">
+                Lesson 05
+            </div>
 
-    <div class="lesson-number">
-        Lesson 07
-    </div>
+            <h3>
+                Bayesian neural nets
+            </h3>
 
-    <h3>
-        Research Seminar: The Security of Machine Learning
-    </h3>
+            <p>
+                Neural networks from a Bayesian and probabilistic
+                perspective.
+            </p>
 
-    <p>
-        A research seminar on the security of machine learning.
-    </p>
+            <a class="button" href="lesson-05/">
+                View lesson
+            </a>
 
-    <div class="buttons">
+        </div>
 
-        <a class="button slides"
-           href="lesson-07/">
-            View seminar
-        </a>
 
-    </div>
+        <div class="lesson">
 
-</div>       
+            <div class="lesson-number">
+                Lesson 06
+            </div>
+
+            <h3>
+                Case study: CRC screening (and introduction to PGMs)
+            </h3>
+
+            <p>
+                A case study on colorectal cancer screening,
+                together with an introduction to probabilistic
+                graphical models.
+            </p>
+
+            <a class="button" href="lesson-06/">
+                View lesson
+            </a>
+
+        </div>
+
+
+        <div class="lesson seminar">
+
+            <div class="lesson-number">
+                Research seminar
+            </div>
+
+            <h3>
+                The Security of Machine Learning
+            </h3>
+
+            <p>
+                A research seminar complementing the topics
+                covered throughout the course.
+            </p>
+
+            <a class="button" href="lesson-07/">
+                View seminar
+            </a>
+
+        </div>
+
 
     </section>
 
